@@ -1,1 +1,8 @@
-console.log("Ejecutando el sistema");
+
+function encriptar(){
+    alert("Encriptar");
+}
+
+function desencriptar(){
+    alert("Desencriptar");
+}
