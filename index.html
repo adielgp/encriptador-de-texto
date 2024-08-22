@@ -7,7 +7,45 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <p>Prueba</p>
+    <header></header>
+    <main class="contenido__principal" id="contenidoprincipal">
+        <div class="div__logo" id="divlogo">
+            <img src="logo.png" alt="logo_de_alura" class="img__logo" id="imglogo">
+        </div>
+        <div class="div__ingreso" id="divingreso">
+            <div class="div__texto__ingresar" id="divtextareaingeso">
+                <textarea name="" class="texto__ingresar" id="textoencriptar" placeholder="Ingrese el texto aqui"></textarea>
+            </div>
+            <div class="div__instruccion">
+                <img src="exclamation.png" alt="signo_de_exclamacion" class="img__exclamacion">
+                <p class="parrafo__instruccion">Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="div__botones">
+                <a href="javascript:encriptar();" class="boton__encriptar">Encriptar</a>
+                <a href="javascript:desencriptar();" class="boton__desencriptar">Desencriptar</a>
+            </div>
+        </div>
+        <div class="div__salida" id="divsalida">
+            <div class="div__resultado__inicial" id="divresultadoinicial">
+                <img src="drawing.png" alt="imagen_del_muñeco" class="imagen__muneco">
+                <div class="texto__resultado">
+                    <div class="mensaje__avisos">
+                        <div class="div__texto__superior">
+                            <p class="texto__superior">Ningún mensaje fue encontrado</p>
+                        </div>
+                        <div class="div__texto__inferior">
+                            <p class="texto__inferior">Ingresa el texto que desees encriptar o desencriptar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="div__resultado__encriptado" id="divresultadoencriptado" style="visibility: hidden;">
+                <p class="parrafo__resultado" id="textodesencriptar"></p>
+                <a href="javascript:copiarTextoEncriptado();" class="boton__copiar">Copiar</a>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
     <script src="app.js"></script>
 </body>
 </html>
